@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="src/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <form id="form">
+                <input
+                    class="enter-city"
+                    type="text"
+                    placeholder="Enter a city"
+                    autofocus="on"
+                    id="input"
+                />
+                <input class="button" type="submit" value="search" />
+            </form>
+            <button id="location">My current location</button>
+            <div class="row">
+                <div class="col-6">
+                    <p class="today">
+                        Weather in <strong class="currentCity">Kyiv</strong>,
+                        <span class="newDate"></span>
+                    </p>
+                    <div class="temperature">
+                        <span class="main">-10 </span>
+                        <sup>
+                            <span id="celc">°C</span> | <span id="far">°F</span>
+                        </sup>
+                        <img src="image/snow.png" alt="snow" width="160px" />
+                    </div>
+                    <p class="all-day">Snow all day</p>
+                    <p class="more-inf">
+                        <span id="feels">Feels like:</span>
+                        <br />
+                        <span id="humidity">Humidity:</span>
+                        <br />
+                        <span id="wind">Wind Speed:</span>
+                    </p>
+                </div>
+                <div class="col-6">
+                    <div class="row right-part">
+                        <div class="col-6">
+                            <div class="day">
+                                Tuesday
+                                <div class="date red">
+                                    2<small>nd</small> January
+                                </div>
+                            </div>
+                            <div class="other-temp">
+                                -8°C
+                                <img
+                                    src="image/cloud-sun.png"
+                                    alt="cloud-sun"
+                                    width="45px"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="day">
+                                Wednesday
+                                <div class="date blue">
+                                    3<small>rd</small> January
+                                </div>
+                            </div>
+                            <div class="other-temp">
+                                -5°C
+                                <img
+                                    src="image/sun.png"
+                                    alt="sun"
+                                    width="45px"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row right-part">
+                        <div class="col-6">
+                            <div class="day">
+                                Thursday
+                                <div class="date green">
+                                    4<small>th</small> January
+                                </div>
+                            </div>
+                            <div class="other-temp">
+                                -12°C
+                                <img
+                                    src="image/cloud.png"
+                                    alt="cloud-sun"
+                                    width="45px"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="day">
+                                Friday
+                                <div class="date yellow">
+                                    5<small>th</small> January
+                                </div>
+                            </div>
+                            <div class="other-temp">
+                                -3°C
+                                <img
+                                    src="image/rain.png"
+                                    alt="sun"
+                                    width="45px"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/index.js"></script>
+    </body>
+</html>
