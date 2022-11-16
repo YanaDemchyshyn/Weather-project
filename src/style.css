@@ -85,10 +85,6 @@ sup {
 #far:hover {
     color: hsl(231, 50%, 50%);
 }
-.all-day {
-    font-size: 15px;
-    margin: 15px 0 2px;
-}
 .more-inf {
     background-color: rgba(0, 110, 197, 0.2);
     border: 1px solid rgb(0, 110, 197, 0.3);
@@ -97,6 +93,7 @@ sup {
     max-width: 270px;
     padding: 16px;
     font-size: 14px;
+    margin-top: 15px;
 }
 .right-part {
     text-align: center;
